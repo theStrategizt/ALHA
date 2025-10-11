@@ -136,7 +136,7 @@ const Blogs = () => {
                         <img
                           src={blog.photo_url}
                           alt={blog.title || "Blog image"}
-                          className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+                          className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300 rounded-md"
                           loading="lazy"
                         />
                       </div>
