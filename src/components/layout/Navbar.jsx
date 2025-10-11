@@ -46,7 +46,7 @@ const Navbar = () => {
           >
             <button
               onClick={() => setDropDown(!dropDown)}
-              className="font-Poppins text-sm  md:text-[0.75em] lg:text-lg flex items-center text-black font-light space-x-1 md:space-x-2 hover:text-[#732ad3] transition duration-300"
+              className="font-Poppins text-sm  md:text-[0.75em]  flex items-center text-black font-light space-x-1 md:space-x-2 hover:text-[#732ad3] transition duration-300"
               aria-expanded={dropDown}
             >
               <span>ABOUT ALHA</span>
@@ -63,7 +63,7 @@ const Navbar = () => {
                   <Link
                     key={link.id}
                     to={link.path}
-                    className="block px-2 md:px-3 py-1 md:py-2 text-sm lg:text-base md:text-[0.55em] text-gray-700 hover:bg-gray-100 rounded-md focus:outline-none focus:bg-gray-200 transition-colors duration-200 border-b border-gray-200 "
+                    className="block px-2 md:px-3 py-1 md:py-2 text-sm lg:text-[0.65em] md:text-[0.55em] text-gray-700 hover:bg-gray-100 rounded-md focus:outline-none focus:bg-gray-200 transition-colors duration-200 border-b border-gray-200 "
                   >
                     {link.labels}
                   </Link>
@@ -77,13 +77,13 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-2 sm:space-x-4 md:space-x-6">
           <Button
             variant="black"
-            className="px-3 sm:px-4 md:px-5 lg:px-6 py-1.5 sm:py-2 md:py-1.5 text-sm sm:text-sm md:text-[0.65em] lg:text-base"
+            className="px-3 sm:px-4 md:px-5 lg:px-6 py-1.5 sm:py-2 md:py-1.5 text-sm sm:text-sm md:text-[0.65em] lg:text-[0.65em]"
           >
             APPLY ONLINE
           </Button>
           <Button
             variant="outlineBlack"
-            className="px-3 sm:px-4 md:px-5 lg:px-6 py-1.5 sm:py-2 md:py-2.5 text-sm sm:text-sm md:text-[0.65em] lg:text-base"
+            className="px-3 sm:px-4 md:px-5 lg:px-6 py-1.5 sm:py-2 md:py-2.5 text-sm sm:text-sm md:text-[0.65em] lg:text-[0.65em]"
           >
             DOWNLOAD APPLICATION FORM
           </Button>
@@ -107,9 +107,9 @@ const Navbar = () => {
           <div className="flex flex-col mb-8">
             <button
               onClick={() => setDropDown(!dropDown)}
-              className="w-full flex justify-between items-center text-black font-light text-sm sm:text-base hover:text-[#732ad3] transition-colors duration-200 py-2"
+              className="w-full flex justify-between items-center text-black/60 font-light text-sm sm:text-base hover:text-[#732ad3] transition-colors duration-200 py-2"
             >
-              <span>ABOUT ALHA</span>
+              <span className="font-medium font-Poppins">ABOUT ALHA</span>
               <ChevronDown
                 className={`transition-transform duration-300 ${
                   dropDown ? "rotate-180" : ""
@@ -124,7 +124,7 @@ const Navbar = () => {
                     key={link.id}
                     to={link.path}
                     onClick={() => setIsMenuOpen(false)}
-                    className="block px-2 sm:px-3 py-1 text-sm sm:text-base text-gray-700 hover:bg-gray-100 rounded-md focus:outline-none focus:bg-gray-200 transition-colors duration-200 "
+                    className="block px-2 sm:px-3 py-1 font-Poppins font-light text-sm sm:text-base text-gray-700 hover:bg-gray-100 rounded-md focus:outline-none focus:bg-gray-200 transition-colors duration-200 "
                   >
                     {link.labels}
                   </Link>
@@ -133,16 +133,16 @@ const Navbar = () => {
             )}
           </div>
 
-          <div className="flex flex-col space-y-2 sm:space-y-3">
+          <div className="flex flex-col space-y-3 sm:space-y-3">
             <Button
               variant="black"
-              className="w-full text-sm sm:text-base py-2 sm:py-2.5"
+              className="w-full text-sm sm:text-base py-2 sm:py-2.5 rounded-md"
             >
               APPLY ONLINE
             </Button>
             <Button
               variant="outlineBlack"
-              className="w-full text-sm sm:text-base py-2 sm:py-2.5"
+              className=" rounded-md w-full text-sm sm:text-base py-2 sm:py-2.5"
             >
               DOWNLOAD APPLICATION FORM
             </Button>

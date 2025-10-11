@@ -5,13 +5,14 @@ import Hero from "./Hero";
 import Requirements from "./Requirements";
 import ExpressForm from "./ExpressForm";
 import Blogs from "./Blogs";
-
+import Footer from "../../components/layout/Footer";
 export default function Landing() {
   return (
-    <div className="flex flex-col min-h-screen relative bg-[#FFFBEC] overflow-hidden">
-      <Helmet>
-        <title>ALHA - Agricultural Land Holding Authority (ALHA)</title>
-        {/* <meta
+    <>
+      <div className="flex flex-col min-h-screen relative bg-[#FFFBEC] overflow-hidden">
+        <Helmet>
+          <title>ALHA - Agricultural Land Holding Authority (ALHA)</title>
+          {/* <meta
           name="description"
           content="Join Orbyt – the platform that helps you launch and grow your ideas securely."
         />
@@ -21,19 +22,19 @@ export default function Landing() {
           content="Launch your ideas into orbit 🚀"
         />
         <meta property="og:type" content="website" /> */}
-      </Helmet>
+        </Helmet>
 
-      <Navbar />
+        <Navbar />
 
-      {/* Page content */}
-      <main className="relative">
-        <Hero />
-        <Requirements />
-        <ExpressForm />
-        <Blogs />
-      </main>
-
-      {/* <Footer /> */}
-    </div>
+        {/* Page content */}
+        <main className="relative">
+          <Hero />
+          <Requirements />
+          <ExpressForm />
+          <Blogs />
+        </main>
+      </div>
+      <Footer />
+    </>
   );
 }
