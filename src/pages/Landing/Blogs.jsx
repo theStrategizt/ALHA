@@ -21,7 +21,7 @@ const Blogs = () => {
       setLoading(true);
       try {
         const { data } = await Axios.get(API_URL, {
-          params: { country: "US", lang: "en", limit: 20 },
+          params: { country: "NG", lang: "en", limit: 20 },
           headers: API_HEADERS,
         });
 

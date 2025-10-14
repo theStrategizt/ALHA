@@ -26,7 +26,7 @@ const Footer = () => {
         {/* Logo - Order 1 on small screens (always visible) */}
         <img
           src="./Images/lagos-logo.svg"
-          className="w-20 md:w-24 h-full object-cover order-1 sm:order-none"
+          className="w-20 md:w-24 h-full object-contain order-1 sm:order-none"
           alt="Lagos State Ministry of Agriculture"
         />
 

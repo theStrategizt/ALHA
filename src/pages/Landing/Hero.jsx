@@ -21,7 +21,7 @@ const Hero = () => {
             src="/Images/showcase.svg"
             alt="Hero-Showcase"
             className="w-[85%] sm:w-[70%] md:w-[55%] lg:w-[90%] h-auto object-contain sm:mt-2 lg:mt-20"
-            loading="eager"
+            loading="loading"
           />
         </div>
       </section>
