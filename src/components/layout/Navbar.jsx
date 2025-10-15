@@ -74,7 +74,7 @@ const Navbar = () => {
                     >
                       {link.labels}
                     </a>
-                  ) : (
+                  ) : ( 
                     <a
                       key={link.id}
                       href={link.path}
