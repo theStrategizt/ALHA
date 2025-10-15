@@ -74,16 +74,14 @@ const Navbar = () => {
                     >
                       {link.labels}
                     </a>
-                  ) : ( 
-                    <a
+                  ) : (
+                    <Link
                       key={link.id}
-                      href={link.path}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      to={link.path}
                       className="block px-2 md:px-3 py-1 md:py-2 text-sm lg:text-[0.65em] md:text-[0.55em] text-gray-700 hover:bg-gray-100 rounded-md transition-colors duration-200 border-b border-gray-200"
                     >
                       {link.labels}
-                    </a>
+                    </Link>
                   )
                 )}
               </div>
@@ -151,15 +149,14 @@ const Navbar = () => {
                       {link.labels}
                     </a>
                   ) : (
-                    <a
+                    <Link
                       key={link.id}
-                      href={link.path}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      to={link.path}
+                      onClick={() => setIsMenuOpen(false)}
                       className="block px-2 md:px-3 py-1 md:py-2 text-sm lg:text-[0.65em] md:text-[0.55em] text-gray-700 hover:bg-gray-100 rounded-md transition-colors duration-200 border-b border-gray-200"
                     >
                       {link.labels}
-                    </a>
+                    </Link>
                   )
                 )}
               </div>
