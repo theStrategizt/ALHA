@@ -12,7 +12,7 @@ const Hero = () => {
         className="relative flex flex-col items-center justify-center min-h-[20rem] sm:min-h-[35rem] lg:min-h-[50rem] pt-16 sm:pt-20 lg:pt-24 pb-10 lg:pb-16 text-black overflow-hidden mt-8 lg:mt-24 px-4 text-center"
       >
         <div className="flex flex-col items-center justify-center space-y-6">
-          <h3 className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-bold leading-tight">
+          <h3 className="text-xl sm:text-4xl md:text-6xl lg:text-8xl font-bold leading-tight">
             <span className="text-[#f99056]">AGRIC</span>-LAND{" "}
             <span className="text-[#66B5A9]">ALLOCATION</span>
           </h3>
@@ -20,7 +20,7 @@ const Hero = () => {
           <img
             src="/Images/showcase.svg"
             alt="Hero-Showcase"
-            className="w-[85%] sm:w-[70%] md:w-[55%] lg:w-[90%] h-auto object-contain sm:mt-2 lg:mt-20"
+            className=" w-[92%] sm:w-[85%] md:w-[70%] lg:w-[75%] h-auto object-contain transition-transform duration-300 hover:scale-[1.02] rounded-md"
             loading="loading"
           />
         </div>
