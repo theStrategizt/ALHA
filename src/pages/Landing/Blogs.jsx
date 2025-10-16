@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const API_URL = "https://real-time-news-data.p.rapidapi.com/top-headlines";
 const API_HEADERS = {
-  "x-rapidapi-key": "f7977fd7d9msh5e0a75b5ae25688p10e9e2jsne4f973872eee",
+  "x-rapidapi-key": "b675ce93f0mshdf350c4ad8de9bap1dff27jsne51513644d6b",
   "x-rapidapi-host": "real-time-news-data.p.rapidapi.com",
 };
 
@@ -21,7 +21,7 @@ const Blogs = () => {
       setLoading(true);
       try {
         const { data } = await Axios.get(API_URL, {
-          params: { country: "NG", lang: "en", limit: 20 },
+          params: { country: "NG", lang: "en", limit: "200" },
           headers: API_HEADERS,
         });
 
@@ -86,6 +86,10 @@ const Blogs = () => {
             </div>
           )}
         </div>
+
+        <span className="px-3 py-1 text-start text-base rounded">
+          Page {currentPage} of {totalPages}
+        </span>
 
         {/* Blogs Section */}
         <div className="flex flex-wrap gap-4 mt-6">
